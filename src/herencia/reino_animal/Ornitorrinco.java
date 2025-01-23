@@ -1,5 +1,6 @@
-package herencia;
-public class Ornitorrinco extends Mamifero implements PonerHuevos{
+package herencia.reino_animal;
+
+public class Ornitorrinco extends Mamifero implements PonerHuevos {
 
     Ornitorrinco(String nombre){
         super(nombre);

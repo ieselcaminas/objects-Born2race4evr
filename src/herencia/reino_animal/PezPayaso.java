@@ -1,5 +1,6 @@
-package herencia;
-public class PezPayaso extends Pez{
+package herencia.reino_animal;
+
+public class PezPayaso extends Pez {
     public PezPayaso(String nombre){
         super(nombre);
     }

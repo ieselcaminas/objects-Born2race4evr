@@ -1,4 +1,5 @@
-package herencia;
+package herencia.reino_animal;
+
 public abstract class Pez extends Animal {
     public Pez(String nombre) {
         super(nombre);

@@ -1,5 +1,6 @@
-package herencia;
-public class Perro extends Mamifero{
+package herencia.reino_animal;
+
+public class Perro extends Mamifero {
 
     Perro(String nombre){
         super(nombre);

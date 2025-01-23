@@ -1,4 +1,5 @@
-package herencia;
+package herencia.reino_animal;
+
 public class MainAnimal {
     public static void main(String[] args) {
 //        Animal animal = new Animal("Pedro");

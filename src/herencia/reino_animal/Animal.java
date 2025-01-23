@@ -1,4 +1,4 @@
-package herencia;
+package herencia.reino_animal;
 /**
  * Esta clase da cierta funcionalidad para un Animal que tiene un nombre y sabe hacer ciertas cosas!
  */

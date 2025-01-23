@@ -1,5 +1,6 @@
-package herencia;
-public class Pajaro extends Animal implements PonerHuevos{
+package herencia.reino_animal;
+
+public class Pajaro extends Animal implements PonerHuevos {
 
     Pajaro(String nombre){
         super(nombre);

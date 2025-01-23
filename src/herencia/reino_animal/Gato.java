@@ -1,15 +1,18 @@
-package herencia;
-public class Tiburon extends Pez implements Jugar{
-    public Tiburon(String nombre){
+package herencia.reino_animal;
+
+public class Gato extends Mamifero implements Jugar {
+    public Gato(String nombre){
         super(nombre);
     }
-
+    public void perseguirUnOvillo(){
+        System.out.println("Perseguir Un Ovillo");
+    }
     @Override
     public void comunicarse()
     {
-        System.out.println("Me comunico con las aletas");
-    }
+        System.out.println("Miau");
 
+    }
     @Override
     public void saltarPorUnAro(){
         System.out.println("Sé saltar por aro");

@@ -1,4 +1,5 @@
-package herencia;
+package herencia.reino_animal;
+
 public abstract class Mamifero extends Animal {
     public Mamifero(String nombre) {
         super(nombre);

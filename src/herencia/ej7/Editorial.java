@@ -1,8 +1,5 @@
 package herencia.ej7;
 
-import herencia.uni.Departamento;
-import herencia.uni.Profesor;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,7 +15,7 @@ public class Editorial {
         this.libros = new ArrayList<>();
     }
 
-    public String getNombre(String nombre) {
+    public String getNombre() {
         return nombre;
     }
 

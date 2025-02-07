@@ -7,16 +7,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Lector {
-    private String dni;
+    private int dni;
+    private String nombre;
     private Historial historial;
 
-    public Lector(String dni, Historial historial) {
+    public Lector(int dni, String nombre, Historial historial) {
         this.dni = dni;
+        this.nombre = nombre;
         this.historial = historial;
     }
 
-    public String getDni() {
+    public int getDni() {
         return dni;
+    }
+
+    public String getNombre() {
+        return nombre;
     }
 
     public Historial getHistorial() {
@@ -25,6 +31,6 @@ public class Lector {
 
     @Override
     public String toString() {
-        return this.dni;
+        return "-" + this.dni;
     }
 }

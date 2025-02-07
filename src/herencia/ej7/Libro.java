@@ -7,29 +7,27 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Libro {
-    private String nombre;
-    private String ISBN;
+    private String titulo;
+    private int ISBN;
     private Tema tema;
     private Editorial editorial;
     private List<Autor> autores;
+    private List<Ejemplar> ejemplares;
 
-    public Libro(String nombre, String ISBN, Tema tema, Editorial editorial) {
-        this.nombre = nombre;
+    public Libro(String titulo, int ISBN, Tema tema, Editorial editorial) {
+        this.titulo = titulo;
         this.ISBN = ISBN;
         this.tema = tema;
         this.editorial = editorial;
         this.autores = new ArrayList<>();
+        this.ejemplares = new ArrayList<>();
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getTitulo() {
+        return titulo;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getISBN() {
+    public int getISBN() {
         return ISBN;
     }
 
@@ -49,8 +47,16 @@ public class Libro {
         this.autores.add(autor);
     }
 
+    public List<Ejemplar> getEjemplares() {
+        return ejemplares;
+    }
+
+    public void addEjemplares(Ejemplar ejemplar) {
+        this.ejemplares.add(ejemplar);
+    }
+
     @Override
     public String toString() {
-        return this.nombre + " " + this.ISBN;
+        return this.titulo + " " + this.ISBN;
     }
 }

@@ -4,16 +4,26 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Catedra {
+    private int c_cat;
     private String nombre;
-    private Facultad facultad;
-    private Departamento departamento;
+    private List<Departamento> departamentos;
     private List<Profesor> profesores;
+    private Facultad facultad;
 
-    public Catedra(String nombre, Facultad facultad, Departamento departamento) {
+    public Catedra(int c_cat, String nombre, Facultad facultad) {
+        this.c_cat = c_cat;
         this.nombre = nombre;
         this.facultad = facultad;
-        this.departamento = departamento;
+        this.departamentos = new ArrayList<>();
         this.profesores = new ArrayList<>();
+    }
+
+    public int getC_cat() {
+        return c_cat;
+    }
+
+    public void setC_cat(int c_cat) {
+        this.c_cat = c_cat;
     }
 
     public String getNombre() {
@@ -24,24 +34,18 @@ public class Catedra {
         this.nombre = nombre;
     }
 
-    public Facultad getFacultad() {
-        return facultad;
+    public List<Departamento> getDepartamentos() {
+        return departamentos;
     }
-
-    public Departamento getDepartamento() {
-        return departamento;
+    public void addDepartamento(Departamento departamento){
+        this.departamentos.add(departamento);
     }
-
-    public List<Profesor> getProfesor() {
+    public List<Profesor> getProfesores() {
         return profesores;
     }
-
-    public void addProfesor(Profesor profesor) {
+    public void addProfesor(Profesor profesor){
         this.profesores.add(profesor);
     }
 
-    @Override
-    public String toString() {
-        return this.nombre;
-    }
+
 }

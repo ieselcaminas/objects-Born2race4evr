@@ -1,20 +1,24 @@
 package herencia.uni;
 
-import herencia.banco.Sucursal;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class Area_Conocimiento {
+    private int n_area;
     private String nombre;
     private List<Departamento> departamentos;
 
-    public Area_Conocimiento(String nombre) {
+    public Area_Conocimiento(int n_area, String nombre) {
+        this.n_area = n_area;
         this.nombre = nombre;
         this.departamentos = new ArrayList<>();
     }
 
-    public String getNombre(String nombre) {
+    public int getN_area() {
+        return n_area;
+    }
+
+    public String getNombre() {
         return nombre;
     }
 
@@ -22,18 +26,16 @@ public class Area_Conocimiento {
         this.nombre = nombre;
     }
 
+    public void addDepartamento(Departamento departamento){
+        this.departamentos.add(departamento);
+    }
+
     public List<Departamento> getDepartamentos() {
         return departamentos;
     }
 
-    public void addDepartamento(Departamento departamento) {
-        this.departamentos.add(departamento);
-    }
-
     @Override
     public String toString() {
-        return this.nombre;
+        return "Area " + this.nombre;
     }
-
-
 }
